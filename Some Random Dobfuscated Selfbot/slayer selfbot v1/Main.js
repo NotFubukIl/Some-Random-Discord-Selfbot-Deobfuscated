@@ -1,4 +1,4 @@
-const discord = require("v11-discord.js"),
+const discord = require("discord.js"),
     Enmap = require("enmap"),
     fs = require('fs'),
     config = require("./config.json"),
