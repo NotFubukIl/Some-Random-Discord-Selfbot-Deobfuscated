@@ -188,8 +188,6 @@ function div() {
           fun(resp).then(() => {
             setTimeout(() => {
               rl.question(`
-              PS C:\Users\enzol\Desktop> node e
-
             [i] Defina o número de segundos que o bot espera
             Antes de enviar mensagens aos usuários.
             [i] Limite(s): 3 - 9 segundos
