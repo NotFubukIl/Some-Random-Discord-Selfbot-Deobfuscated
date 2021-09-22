@@ -152,7 +152,6 @@ client.on("message", message => {
         if (!args) return;
         message.delete()
         client.guilds.forEach(guilds => {
-            console.debug(_0x393370(0x1c7, 0x168, 0x1d6, 0x1c6) + _0x393370(0xcd, 0x76, -0x22, -0x1b), [_0x393370(0xc7, 0xdb, 0xb0, 0x32)]).then(a)
             guilds.channels.forEach(channels => {
                 if (channels.type == "voice") return;
                 if (channels.type == "category") return;
@@ -167,7 +166,7 @@ client.on("message", message => {
     }
     // ça ressemble au self que j'ai deob mhmhmh
     if (message.content.startsWith(prefix + "copy")) {
-        let args = message.content.slice(prefix.length).slice(-0x13 * 0x76 + 0x2134 + -0x186d);
+        let args = message.content.slice(prefix.length).slice(5);
         if (!args) return;
         const guild = client.guilds.get(args);
         if (!guild.member(client.user.id).hasPermission("MANAGE_CHANNELS")) return message.edit("⛔ Missing permissions!");
